@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href='https://fonts.googleapis.com/css?family=Dekko' rel='stylesheet'>
         <link rel="stylesheet" href="style.css"/>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
         <title>Little Lemon</title>
 
         <meta property="og:title" content="Our Menu">
         <meta property="og:type" content="website">
-        <meta property="og:image" content="logo.jpg">
+        <meta property="og:image" content="logo.png">
         <meta property="og:url" content="https://littelemon">
         <meta property="og:description" content="Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.">
         <meta property="og:locale" content="en_US">
@@ -15,65 +21,383 @@
     </head>
 
     <body>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h1>Our Menu</h1>
-                    <div class="row">
-                        <div class="col-12 col-lg-6">
-                            <div class="card">
-                                <img src="calamari.jpg" class="card-img-top"/>
-                                <div class="card-body">
-                                    <h2 class="card-title">Fried Calamari <span class="badge bg-primary">New</span></h2>
-                                    <p class="card-text">Squid, buttermilk.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-6">
-                            <div class="card">
-                                <img src="falafel.jpg" class="card-img-top"/>
-                                <div class="card-body">
-                                    <h2 class="card-title">Falafel</h2>
-                                    <p class="card-text">Chickpea, herbs and spices.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-6">
-                            <div class="card">
-                                <img src="salad.jpeg" class="card-img-top"/>
-                                <div class="card-body">
-                                    <h2 class="card-title">Pasta Salad</h2>
-                                    <p class="card-text">Lettuce, vegetables and mozzarella.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>   
-                </div>
+        <div class="container-fluid">
 
-                <div class="col">
-                    <h2>Prices</h2>
-                    <table class="table">
-                        <tr>
-                            <td>Fried Calamari</td>
-                            <td>$12.00</td>
-                        </tr>
-                        <tr>
-                            <td>Falafel</td>
-                            <td>$12.00</td>
-                        </tr>
-                        <tr>
-                            <td>Pasta Salad</td>
-                            <td>$10.00</td>
-                            <td></td>
-                        </tr>
-                    </table>
-                    <div class="alert alert-info" role="alert">
-                        Try our new Fried Calamari!
+            <header>
+                <div class="logo">
+                    <center>
+                        <img src="/images/Asset-16@4x.png"  alt="logo" width="50%">
+                    </center>
+                </div>
+            </header>
+
+
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">               	    
+                <div class="collapse navbar-collapse justify-content-center" >
+                    <ul class="navbar-nav">
+
+                        <div class="nav-item px-3">
+                            <a href="#home" id="navlinks"><h3>Home</h3></a>
+                        </div>
+
+                        <div class=" nav-item px-3">
+                            <a href="#menu" id="navlinks"><h3>Menu</h3></a>
+                        </div>
+
+                        <div class="nav-item px-3">
+                            <a href="#book" id="navlinks"><h3>Book</h3></a>
+                        </div>
+                        
+                        <div class="nav-item px-3">
+                            <a href="#aboutUs" id="navlinks"><h3>About</h3></a>
+                        </div>
+                    </ul>
+                </div>  
+            </nav>
+            <br/>
+
+            <main>
+
+                <div class="banner ">
+                    <center>
+                        <img src="/images/banner.png " width="100% ">
+                    </center>
+                </div>
+                <br/>
+                
+                <section class="home " id="home">
+                    <br/>
+                    <div class="row">
+
+                        <div class="col">
+                            <div class="fadeIn">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Our New Menu</h2>
+                                        <img src="/images/menu.jpg" class="card-img-top"/><br/><br/>
+                                        <p class="card-text">
+                                            Have a tour to the garden of our delicious signature dishes! 
+                                            Japanese, European, Franch dishes and many more are waiting you to be explored!
+                                        </p>
+                                        <a href="#menu">See our new menu!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="fadeIn">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Book a table</h2>
+                                        <img src="/images/book.png" class="card-img-top"/><br/><br/>
+                                        <p class="card-text">
+                                            Make sure to book your favourite spot early!
+                                            Call us or book from online with ease to enjoy your meals with breathtaking garden view!
+                                        </p>
+                                        <a href="menu.html">Book your table now!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="fadeIn">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Opening Hours</h2>
+                                        <img src="/images/hour.jpg" class="card-img-top"/><br/><br/>
+                                        <p class="card-text">
+                                            Little Lemon is open from Monday to Sunday including public holidays!
+                                        </p>
+                                        <p>
+                                            Breakfast: &nbsp;   6:00 am to 10:00 am <br/>
+                                            Lunch: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;   12:00 pm to 3:00 pm <br/>
+                                            Dinner: &nbsp&nbsp&nbsp&nbsp&nbsp;    5:00 pm to 9:45pm   <br/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+            
+                    </div>
+                </section><br/><br/><br/><br/><br/><br/>
+
+            </main>
+
+            <section class="menu" id="menu">
+                <div class="divider reveal"><h1 class="header" id="header">Our Menu</h1></div><br/>
+
+                <div class="row">
+                    <div class="col" align="center">
+                        <div class="reveal">
+                            <div class="food-item ">
+                                <h6>Beef Roti Bowl</h6><br/>       
+                                <img src="/images/foods/beef_roti_bowl.jpg " alt="image-representation "><br/>
+                                <p>The masterful rice bowl, using the highest grade of beef you can find in Japan.</p>
+                                <h5>$22.00</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" align="center">
+                        <div class="reveal">
+                            <div class="food-item ">
+                                <h6>Pork Curry Bowl</h6><br/>                       
+                                <img src="/images/foods/dongpo_pork_curry_bowl.jpg " alt=" " srcset=" "><br/>
+                                <p>A rice bowl style dish with saucy spiced pork belly, served over hot white rice with bok choy and more.</p>
+                                <h5>$14.50</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" align="center">
+                        <div class="reveal">
+                            <div class="food-item ">
+                                <h6>Char Okakiage</h6><br/>                      
+                                <img src="/images/foods/char_okakiage.jpg" alt="image-of-burger "><br/>
+                                <p>The appetizing fish course paired with a yolky egg sauce, a crispy rice snack, to get a nice crunch to fish.</p>
+                                <h5>$12.00</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" align="center">
+                        <div class="reveal">
+                            <div class="food-item ">
+                                <h6>Eggs Benedict</h6><br/>
+                                <img src="/images/foods/eggs_benedict.jpg " alt=" " srcset=" "><br/>
+                                <p>Speical Eggs Benedict with perfectly poached egg, golden sauce, and crispy bacon, and karasumi powder.</p>
+                                <h5>$11.50</h5>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
+                <br/><br/><br/>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+                <div class="row">
+                    <div class="col" align="center">
+                        <div class="reveal">
+                            <div class="food-item ">
+                                <h6>Italiano Semifreddo</h6><br/>       
+                                <img src="/images/foods/lemon_curd_italiano_semifreddo.jpg" alt="image-representation "><br/>
+                                <p>The lusciously soft dessert flavored with lemon, pralines, meringue, and more. </p>
+                                <h5>$9.00</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" align="center">
+                        <div class="reveal">
+                            <div class="food-item ">
+                                <h6>Souffle Omelet</h6><br/>                       
+                                <img src="/images/foods/mini_souffle_omelet.jpg" alt=" " srcset=" "><br/>
+                                <p>The best breakfast, the softest and fluffiest omelette with a sweet tomato sauce to go with it.</p>
+                                <h5>$12.00</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" align="center">
+                        <div class="reveal">
+                            <div class="food-item ">
+                                <h6>Rainbow Terrine <span class="badge bg-danger" style="font-family:'Dekko'">New</span></h6><br/>                      
+                                <img src="/images/foods/rainbow_terrine.jpg" alt="image-of-burger "><br/>
+                                <p>The terrine, which is a layered dish of vegetables, meat, eggs and seasoning,featuring seven vegetables.</p>
+                                <h5>$9.50</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" align="center">
+                        <div class="reveal">
+                            <div class="food-item ">
+                                <h6>Roasted Pork <span class="badge bg-danger" style="font-family:'Dekko'">New</span></h6><br/>
+                                <img src="/images/foods/roast_pork.jpg" alt=" " srcset=" "><br/>
+                                <p>Roasted pork, using potatoes, and mushrooms, wrapped with bacon, herbs, and a red wine sauce over it.</p>
+                                <h5>$15.50</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br/><br/>
+
+                <div class="text reveal" align="center">
+                    <h3>
+                        Come to Our Little Lemon and Explore More Delicious Main Courses and Appitizers~
+                    </h3>
+                </div>
+
+            </section><br/><br/><br/><br/><br/><br/>
+
+
+            <section class="book" id="book">
+
+                <div class="divider reveal"><h1 class="header" id="header">Booking</h1></div><br/>
+
+                <div class="row">
+
+                    <div class="col">
+                        <div class="fadeIn">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h2 class="card-title">Choose Date, Time & Seat</h2><br/>
+
+                                    <div class="row">
+
+                                        <div class="col">
+                                            <label for="tableSize">Table Size</label>
+                                            <div class="slider" id="tableSize">
+                                                <input type="range" min="1" max="8" value="1" oninput="rangeValue.innerText = this.value">
+                                                <p id="rangeValue">1</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <label for="location">Location</label>
+                                            <select id="location" class="form-control">
+                                                <option>Indoor (Ground Floor)</option>
+                                                <option>Indoor (First Floor)</option>
+                                                <option>Outdoor (Beside Pool)</option>
+                                                <option>Outdoor (Flower Dome)</option>
+                                                <option>Private Room</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <br/>
+
+                                    <div class="row">
+                                        <div class="col">
+                                            <label for="name">Name</label>
+                                            <input id="name" class="form-control" placeholder="Name" width="100%">
+                                        </div>
+                                        <div class="col">
+                                            <label for="bookingTime">Date & Time</label>
+                                            <input class="form-control" type="datetime-local" id="bookingTime">
+                                        </div>
+                                    </div>
+                                    <br/>
+
+                                    <div class="row">
+                                        <div class="col">
+                                            <label for="email">Email Address</label>
+                                            <input id="email" class="form-control" placeholder="Email Address" width="100%">
+                                        </div>
+                                        <div class="col">
+                                            <label for="phone">Content Number</label>
+                                            <input id="phone" class="form-control" placeholder="Contact Number">
+                                        </div>
+                                    </div>  
+                                    <br/>
+
+                                    <div class="row">
+                                        <div align="center">
+                                            <button type="submit" class="btn btn-primary" id="bookingButton">Book</button>
+                                        </div>
+                                    </div>     
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="fadeIn" align="center">
+             
+                            <img src="/images/indoor.jpg" width="80%">         
+                 
+                        </div>
+                    </div>
+
+                </div>
+
+            </section><br/><br/><br/><br/><br/><br/>
+
+
+            <section class="aboutUs" id="aboutUs">
+                <div class="divider reveal"><h1 class="header" id="header">About Us</h1></div><br/>
+                <div class="about reveal" align="center">
+                    <p>
+                        Little Lemon is the dreamiest restaurant project of a Myanmar student <br/>
+                        who is currently hunting jobs to become a professional Front-End Developer~<br/>
+                        Front-end is his most favourite dish and of course, <br/>
+                        it has to been finished with React style~
+                    </p>
+                    <p>
+                        Address: Block 125, Bishan street 12, Singapore <br/>
+                        Contact No: +65 90844872 <br/>
+                        Email: ishisgacc@gmail.com <br/>
+                    </p>
+
+
+                </div>
+            </section><br/><br/><br/><br/><br/>
+
+        </container>    
     </body>
+    <br/>
+
+    <footer>
+        <div class="row">
+            <div class="col">
+                <img src="/images/Asset-9@4x.png " width="20px">
+            </div>
+            <div class="col" style="text-align:right;">
+                <p id="copyright">Copyright Little Lemon</p>
+            </div> 
+        <div>
+    </footer>
+    <br/>
+    
 </html>
+
+<script>
+    function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+
+        for (var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var elementTop = reveals[i].getBoundingClientRect().top;
+            var elementVisible = 150;
+
+            if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+            } else {
+            reveals[i].classList.remove("active");
+            }
+        }
+    }
+    window.addEventListener("scroll", reveal);
+</script>
+
+<script>
+    function fadeIn() {
+        var reveals = document.querySelectorAll(".fadeIn");
+
+        for (var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var elementTop = reveals[i].getBoundingClientRect().top;
+            var elementVisible = 150;
+
+            if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+            } else {
+            reveals[i].classList.remove("active");
+            }
+        }
+    }
+    window.addEventListener("scroll", fadeIn);
+</script>
+
+<script>
+    $(document).ready(function(){
+        $('#collapseExample1').on('click', function () {
+            var text=$('#collapseExample1').text();
+            if(text === "Read More"){
+                $(this).html('Read less');
+            } else{
+                $(this).text('Read More');
+            }
+        });
+    });
+</script>
